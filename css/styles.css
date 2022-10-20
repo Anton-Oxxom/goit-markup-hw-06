@@ -27,9 +27,7 @@ ol {
     padding-left: 0;
 }
 
-textarea {
-    resize: none;
-}
+
 
 .html {
     box-sizing: border-box;
@@ -520,6 +518,27 @@ body{
     display: flex;  
 }
 
+.footer-social-block {
+    margin-right: 93px;
+}
+
+.footer-connect-title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.mail-footer {
+    height: 50px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+}
+
 /* Portfolio */
 .filtr-nav {
     display: flex;
@@ -651,8 +670,11 @@ body{
     background: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 40px;
+    
 }
+
+
+
 
 .close-button {
    position: absolute;
@@ -669,120 +691,119 @@ body{
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
    cursor: pointer;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.close-button:hover,
+.close-button:focus {
+    fill: #2196F3;
+}
+
 
 .contact-form {
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    margin: 0px;
+}
+
+
+
+.connection-form {
     display: flex;
     flex-direction: column;
+    row-gap: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
 }
 
-.contact-form label {
-    margin-bottom: 4px;
-    
-        font-size: 12px;
-        line-height: 1.17;
-       
-    
-        letter-spacing: 0.01em;
-    
-        color: #757575;
-}
-
-.contact-form input {
-    height: 40px;
+.contact-form-input {
     margin-bottom: 10px;
+    padding: 12px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
-
-
 
 .coment-form {
     display: flex;
     flex-direction: column;
-}
-
-.coment-form textarea {
-    margin-bottom: 20px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    height: 120px;
-    padding: 12px 16px;
-    overflow: hidden;
-    
-}
-
-.coment-form label {
+    row-gap: 4px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: #757575;
-    margin-bottom: 4px;
+    color: var(--primary-text-color);
 }
 
-.coment-form textarea::placeholder {
+.coment-form-input {
+    height: 120px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+   
+    
+}
+
+.checkbox-form {
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.checkbox-form-label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    
+    
+}
+
+.checkbox-terms {
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: #2196F3;
+}
 
 
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.01em;
-color: rgba(117, 117, 117, 0.5);
-height: 120px;
+.button-contact-wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+.button-contact-form {
+    width: 200px;
+    height: 50px;
+    color: var(--primary-white-color);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 
 }
 
-.form-title {
+.button-contact-form:hover,
+.button-contact-form:focus {
+    background-color: #188CE8;
+}
+
+.connection-form-title {
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
     margin-bottom: 12px;
 }
 
-.checkbox {
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        
-    
-        letter-spacing: 0.03em;
-    
-        color: #757575;
-    
-}
 
-.button-block {
-    display: flex;
-    justify-content: center;
-}
 
-.modal-button {
-    width: 200px;
-    height: 50px;
-    
-        
-    color: var(--primary-white-color);
-        background: #2196F3;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      
-        
 
-}
-
-.modal-button:hover,
-.modal-button:focus {
-    background-color: #188CE8;
-}
-    
-
-.terms {
-    color:rgba(33, 150, 243, 1);
-}
 
 
 /*колір основного текста 757575*/
