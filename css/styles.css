@@ -736,14 +736,17 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 4px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: var(--primary-text-color);
+   
     
 }
 
 
+.contact-form-label {
+font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+}
 
 .contact-form-input {
     margin-bottom: 10px;
@@ -757,10 +760,7 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 4px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: var(--primary-text-color);
+    
 }
 
 .coment-form-input::placeholder {
@@ -768,6 +768,13 @@ body{
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+}
+
+.coment-form-label {
+    font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: var(--primary-text-color);
 }
 
 .coment-form-input {
