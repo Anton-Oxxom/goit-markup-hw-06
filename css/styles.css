@@ -774,6 +774,7 @@ body{
 
 .contact-form-input-wrapper {
     position: relative;
+    display: block;
     
 }
 
