@@ -564,14 +564,22 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-subscribe">
+          <p class="footer-connect-title">Підпишіться на розсилку</p>
           <form>
-            <h2 class="footer-connect-title">Підпишіться на розсилку</h2>
-            <div class="footer-form">
+            <span class="footer-button-wraper">
               <input class="mail-footer" type="email" name="user-mail" placeholder="E-mail" />
-
-              <button class="btn footer-button" type="submit">Відправити</button>
-            </div>
+              <button class="footer-button" type="submit">Підписатися</button>
+              <svg
+                class="footer-button-icon"
+                width="24"
+                height="24"
+                aria-label="send-mail"
+                lang="en"
+              >
+                <use href="./images/sprite.svg#icon-send-mail"></use>
+              </svg>
+            </span>
           </form>
         </div>
       </div>
@@ -662,7 +670,9 @@
             <svg class="checkbox-form" width="16" height="15" aria-label="icon-check" lang="en">
               <use class="checkbox-icon" href="./images/sprite.svg#icon-check"></use>
             </svg>
-            Погоджуюся з розсилкою та приймаю&nbsp;<a href="">Умови договору</a>
+            Погоджуюся з розсилкою та приймаю&nbsp;<a href="" class="checkbox-terms"
+              >Умови договору</a
+            >
           </label>
           <button type="submit" class="button-contact-form">Відправити</button>
         </form>
