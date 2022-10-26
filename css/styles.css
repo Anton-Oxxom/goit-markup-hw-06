@@ -842,11 +842,7 @@ body{
         color: var(--primary-text-color);
 }
 
-.checkbox-form-label {
-    display: flex;
-        
-        
-}
+
 
 .checkbox-form {
     border: 1px solid black;
